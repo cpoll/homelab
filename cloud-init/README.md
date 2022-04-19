@@ -10,6 +10,12 @@ Cloud-init is installed by default on Ubuntu Server 20.04
 Make sure the box can get to the internet, then run
 - reboot
 
+
+# cloud-init debugging
+- A lot of things only run once, so run `cloud-init clean` between runs
+- `cloud-init single -n cc_users_groups` to run (and debug) single modules
+    - modules don't correspond to sections. For example, `cc_ssh_import_id` handles the ssh_import_id section in users.
+
 # TODO:
 - Add datasource from network
 
