@@ -1,0 +1,5 @@
+all:
+    nodes:
+        n0-crisplab.local:
+    parents:
+        n0-crisplab.local:

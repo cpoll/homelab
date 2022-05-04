@@ -1,0 +1,7 @@
+- host: controllers
+  roles:
+    - install_kubernetes_controller
+
+- hosts: nodes
+  roles:
+    - install_kubernetes_node

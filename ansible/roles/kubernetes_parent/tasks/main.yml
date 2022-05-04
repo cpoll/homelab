@@ -1,0 +1,5 @@
+---
+- name: survey
+  block:
+    - name: ls
+      command: ls 
