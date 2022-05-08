@@ -1,4 +1,8 @@
-- host: controllers
+- hosts: all
+  roles:
+    - setup_and_hardening
+
+- hosts: controllers
   roles:
     - install_kubernetes_controller
 

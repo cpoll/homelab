@@ -1,5 +1,8 @@
 all:
+  children:
     nodes:
+      hosts:
         n0-crisplab.local:
     parents:
+      hosts:
         n0-crisplab.local:

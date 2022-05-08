@@ -2,4 +2,5 @@
 - name: survey
   block:
     - name: ls
-      command: ls 
+      ansible.builtin.command: ls
+      changed_when: false

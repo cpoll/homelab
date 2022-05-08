@@ -1,0 +1,10 @@
+---
+- name: survey
+  block:
+    - name: ls
+      ansible.builtin.command: ls /
+      changed_when: false
+      register: ls_result
+
+    - name: show ls result
+      ansible.builtin.debug: msg="{{ ls_result.stdout.split('\n') }}"
